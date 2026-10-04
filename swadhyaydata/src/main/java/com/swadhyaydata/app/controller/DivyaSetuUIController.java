@@ -24,6 +24,7 @@ import com.swadhyaydata.app.entity.VisharZipDTO;
 
 @RestController
 @RequestMapping(value = "/api")
+
 public class DivyaSetuUIController {
 
 	@Autowired
