@@ -1,0 +1,39 @@
+# Build output
+target/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE settings
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+
+# Spring Boot
+*.log
+logs/
+application-local.properties
+application-local.yml
+
+# Generated / runtime output
+output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives / backups
+*.zip
+
+# IDE workspace folder (not a project)
+/STS/
