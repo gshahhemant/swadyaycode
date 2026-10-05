@@ -198,7 +198,7 @@ public class CsvProcessorTravisCountyService {
 
 		 dumpDataToDatabase(validRecords,zip);
 
-		 fileProcessLogService.completeLog(fileProcessLog, validRecords.size());
+		 fileProcessLogService.completeLog(fileProcessLog, cleanLines.size());
 
 		} catch (IOException e) {
 			fileProcessLogService.failLog(fileProcessLog);

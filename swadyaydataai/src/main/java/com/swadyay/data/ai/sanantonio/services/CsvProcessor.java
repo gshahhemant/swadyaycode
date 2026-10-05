@@ -145,7 +145,7 @@ public class CsvProcessor {
 
 			dumpDataToDatabase(validRecords, zip);
 
-			fileProcessLogService.completeLog(fileProcessLog, validRecords.size());
+			fileProcessLogService.completeLog(fileProcessLog, cleanLines.size());
 
 		} catch (IOException e) {
 			fileProcessLogService.failLog(fileProcessLog);
@@ -262,7 +262,7 @@ public class CsvProcessor {
 
 			dumpDataToDatabase(validRecords, zip);
 
-			fileProcessLogService.completeLog(fileProcessLog, validRecords.size());
+			fileProcessLogService.completeLog(fileProcessLog, cleanLines.size());
 
 			logger.info("************** END processCsvForCorpus *****************");
 
