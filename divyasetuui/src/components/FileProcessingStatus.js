@@ -39,6 +39,7 @@ function FileProcessingTable({ title, rows }) {
               <th>Start Time</th>
               <th>End Time</th>
               <th>Total Duration</th>
+              <th>No. of Records</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -49,6 +50,7 @@ function FileProcessingTable({ title, rows }) {
                 <td>{formatDateTime(row.startTime)}</td>
                 <td>{formatDateTime(row.endTime)}</td>
                 <td>{formatDuration(row)}</td>
+                <td>{row.numberOfRecords ?? '-'}</td>
                 <td>
                   <span className={`status-badge ${statusClass(row.status)}`}>{row.status}</span>
                 </td>
