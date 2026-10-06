@@ -89,6 +89,7 @@ public class CsvProcessor {
 			}
 
 			logger.info("total clened size:::" + cleanLines.size());
+			fileProcessLogService.updateTotalRecords(fileProcessLog, cleanLines.size());
 			boolean result = false;
 			// ✅ Convert to POJO & filter
 			for (String[] fields : cleanLines) {
@@ -198,6 +199,7 @@ public class CsvProcessor {
 			}
 
 			logger.info("total clened size:::" + cleanLines.size());
+			fileProcessLogService.updateTotalRecords(fileProcessLog, cleanLines.size());
 			boolean result = false;
 			// ✅ Convert to POJO & filter
 			for (String[] fields : cleanLines) {

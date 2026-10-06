@@ -30,6 +30,15 @@ public class FileProcessLogService {
     }
 
     /**
+     * Updates the in-progress log entry with the total number of (cleaned) records found,
+     * so the record count is visible while the file is still PROCESSING.
+     */
+    public void updateTotalRecords(FileProcessLog fileProcessLog, int totalRecords) {
+        fileProcessLog.setNumberOfRecords(totalRecords);
+        fileProcessLogRepository.save(fileProcessLog);
+    }
+
+    /**
      * Marks the log entry as COMPLETED, recording the end time and number of records processed.
      */
     public void completeLog(FileProcessLog fileProcessLog, int numberOfRecords) {

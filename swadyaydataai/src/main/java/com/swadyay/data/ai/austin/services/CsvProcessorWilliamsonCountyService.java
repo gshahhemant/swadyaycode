@@ -95,6 +95,7 @@ public class CsvProcessorWilliamsonCountyService {
 			}
 
 			logger.info("total clened size:::" + cleanLines.size());
+			fileProcessLogService.updateTotalRecords(fileProcessLog, cleanLines.size());
 			boolean result = false;
 			// ✅ Convert to POJO & filter
 			
