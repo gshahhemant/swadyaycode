@@ -45,7 +45,7 @@ export function SanAntonioUpload() {
   };
 
   return (
-    <CountyDataUpload title="San Antonio Data Process (CSV only)" uploadEndpoint={API_ENDPOINTS.SANANTONIO_DATA_UPLOAD}>
+    <CountyDataUpload title="Bexar County (San Antonio) Data Process (CSV only)" uploadEndpoint={API_ENDPOINTS.SANANTONIO_DATA_UPLOAD}>
       <Notification notification={notification} onClose={hideNotification} />
       <div className="section-title">Retrieve San Antonio Folder</div>
       <div style={{ display: 'flex', gap: '18px', marginBottom: '18px', flexWrap: 'wrap', alignItems: 'center' }}>

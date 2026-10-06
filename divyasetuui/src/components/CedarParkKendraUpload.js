@@ -4,6 +4,6 @@ import { CountyDataUpload } from './CountyDataUpload';
 
 export function CedarParkKendraUpload() {
   return (
-    <CountyDataUpload title="Cedar Park Kendra Data Process (CSV only)" uploadEndpoint={API_ENDPOINTS.WILLIAMSON_COUNTY_DATA_UPLOAD} />
+    <CountyDataUpload title="Williamson County Data Process (CSV only)" uploadEndpoint={API_ENDPOINTS.WILLIAMSON_COUNTY_DATA_UPLOAD} />
   );
 }

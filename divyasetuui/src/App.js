@@ -261,19 +261,19 @@ function App() {
                 className={`sub-tab-btn${dataProcessingTab === 'san-antonio' ? ' active' : ''}`}
                 onClick={() => setDataProcessingTab('san-antonio')}
               >
-                San Antonio Kendra
+                Bexar County (San Antonio)
               </button>
               <button
                 className={`sub-tab-btn${dataProcessingTab === 'austin-kendra' ? ' active' : ''}`}
                 onClick={() => setDataProcessingTab('austin-kendra')}
               >
-                Austin Kendra
+                Travis County
               </button>
               <button
                 className={`sub-tab-btn${dataProcessingTab === 'cedar-park-kendra' ? ' active' : ''}`}
                 onClick={() => setDataProcessingTab('cedar-park-kendra')}
               >
-                Cedar Park Kendra
+                Williamson County
               </button>
             </div>
             {dataProcessingTab === 'san-antonio' && <SanAntonioUpload />}

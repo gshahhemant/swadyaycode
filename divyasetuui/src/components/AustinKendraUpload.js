@@ -5,7 +5,7 @@ import { CountyDataUpload } from './CountyDataUpload';
 export function AustinKendraUpload() {
   return (
     <CountyDataUpload
-      title="Austin Kendra Data Process (CSV or XLSX)"
+      title="Travis County Data Process (CSV or XLSX)"
       uploadEndpoint={API_ENDPOINTS.TRAVIS_COUNTY_DATA_UPLOAD}
       acceptedExtensions={['.csv', '.xlsx']}
     />
